@@ -35,9 +35,6 @@ jobs:
     - name: Build
       run: npm run build
 
-    - name: Set up Github identidy
-      run: git config --global user.email "manutai@teraiamano.com" && git config --global user.name "Manutai TERAIAMANO"
-
     - name: Pushes to production repository
       uses: cpina/github-action-push-to-another-repository@main
       env:
