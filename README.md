@@ -1,3 +1,4 @@
-# Manutai TERAIAMANO's portfolio
+# Manutai Portfolio
 
+### Install dependencies and run the dev environment
 `npm install && npm start`
