@@ -35,6 +35,9 @@ jobs:
     - name: Build
       run: npm run build
 
+    - name: Set up Github identidy
+      run: git config --global user.email "manutai@teraiamano.com" && git config --global user.name "Manutai TERAIAMANO"
+
     - name: Push the build to production repository
       run: cd build && git init && git remote add origin https://github.com/manutaitrmn/manutaitrmn.github.io.git && git add . && git commit -m "Deploy" && git push origin master
 
