@@ -32,8 +32,10 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run the tests
-      run: npm test
-
     - name: Build
       run: npm run build
+
+    - name: Push the build to production repository
+      run: cd build && git init && git remote add origin https://github.com/manutaitrmn/manutaitrmn.github.io.git && git add . && git commit -m "Deploy" && git push origin master
+
+    
