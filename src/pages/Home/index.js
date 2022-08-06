@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import image from 'assets/images/me.svg';
 
 const header = [
@@ -35,7 +37,7 @@ const Home = () => {
     <div className='relative z-10 w-full h-full px-10 bg-dark-gray'>
         <header className='h-1/10 flex flex-row justify-between px-2'>
             <div className='flex flex-row h-full items-center'>
-               <a href="/"><h1 className="uppercase text-white">Manutai</h1></a>
+               <Link to="/"><h1 className="uppercase text-white">Manutai</h1></Link>
             </div>
             <div>
                 <nav className='flex h-full'>
