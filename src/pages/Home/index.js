@@ -1,7 +1,5 @@
 import image from 'assets/images/me.svg';
 
-import { Link } from 'react-router-dom';
-
 const header = [
     {
         title: "Projects",
