@@ -38,7 +38,14 @@ jobs:
     - name: Set up Github identidy
       run: git config --global user.email "manutai@teraiamano.com" && git config --global user.name "Manutai TERAIAMANO"
 
-    - name: Push the build to production repository
-      run: cd build && git init && git remote add origin https://github.com/manutaitrmn/manutaitrmn.github.io.git && git add . && git commit -m "Deploy" && git push origin master
-
+    - name: Pushes to production repository
+      uses: cpina/github-action-push-to-another-repository@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.PAT }}
+      with:
+        source-directory: 'build'
+        destination-github-username: 'manutaitrmn'
+        destination-repository-name: 'manutaitrmn.github.io'
+        user-email: manutai@teraiamano.com
+        target-branch: main
     
