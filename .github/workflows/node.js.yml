@@ -47,5 +47,5 @@ jobs:
         destination-github-username: 'manutaitrmn'
         destination-repository-name: 'manutaitrmn.github.io'
         user-email: manutai@teraiamano.com
-        target-branch: main
+        target-branch: master
     
