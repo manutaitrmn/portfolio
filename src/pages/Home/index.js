@@ -34,7 +34,7 @@ const footerLinks = [
 
 const Home = () => {
   return (
-    <div className='relative z-10 w-full h-full px-10 bg-dark-gray'>
+    <div className='relative z-10 w-full h-full px-5 xl:px-10 bg-dark-gray'>
         <header className='h-1/10 flex flex-row justify-between px-2'>
             <div className='flex flex-row h-full items-center'>
                <Link to="/"><h1 className="uppercase text-white">Manutai</h1></Link>
@@ -43,7 +43,7 @@ const Home = () => {
                 <nav className='flex h-full'>
                     <ul className='flex flex-row items-center h-full'>
                         { header.map((element, index) => 
-                            <li key={index} className='list-none tracking-wider ml-14 text-white'><a href={element.link}>{element.title}</a></li>
+                            <li key={index} className='list-none tracking-wider ml-7 xl:ml-14 text-white'><a href={element.link}>{element.title}</a></li>
                         )}
                     </ul>
                 </nav>
@@ -65,7 +65,7 @@ const Home = () => {
          <footer className='h-1/10'>
             <ul className='h-full flex flex-row items-center'>
                { footerLinks.map((element, index) =>
-                    <li key={index} className='list-none mr-14 text-white'><a target='_blank' rel='noreferrer' href={element.link}>{element.title}</a></li>
+                    <li key={index} className='list-none mr-7 xl:mr-14 text-white'><a target='_blank' rel='noreferrer' href={element.link}>{element.title}</a></li>
                 ) }
             </ul>
          </footer>
