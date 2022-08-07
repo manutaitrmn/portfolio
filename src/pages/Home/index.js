@@ -49,7 +49,7 @@ const Home = () => {
                 </nav>
             </div>
          </header>
-         <section className='flex flex-row items-center justify-between w-full h-8/10 px-80'>
+         <section className='flex flex-col xl:flex-row items-center xl:justify-between  w-full h-8/10 xl:px-80'>
             <div>
                <h2 className='uppercase'><span className='text-xl tracking-widest text-dark-white'>Teraiamano</span><br/><span className='text-6xl text-white'>Manutai</span></h2>
                <br/>
@@ -58,8 +58,8 @@ const Home = () => {
                <p className='text-white'>Junior full-stack developer</p>
                <br/>
             </div>
-            <div className='flex items-end justify-end relative z-20 w-1/2 h-full overflow-hidden'>
-                <img className='relative h-4/5 right-0' src={image} alt="" />
+            <div className='flex items-center justify-center xl:items-end xl:justify-end relative z-20 w-full xl:w-1/2 h-full overflow-hidden'>
+                <img className='relative h-full xl:h-4/5 right-0' src={image} alt="" />
             </div>
          </section>
          <footer className='h-1/10'>
@@ -70,6 +70,7 @@ const Home = () => {
             </ul>
          </footer>
     </div>
+    
   )
 }
 
