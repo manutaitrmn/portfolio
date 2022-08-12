@@ -80,7 +80,6 @@ const Footer = tw.footer`
 `
 
 const Home = () => {
-
     return (
         <BlockWrapper>
             <Header>
@@ -104,12 +103,12 @@ const Home = () => {
                         <span className='text-4xl xl:text-6xl text-dark-gray'>Manutai</span>
                     </h2>
                     <hr className='w-2/5 h-2 border-none bg-rose my-5' />
-                    <p className='text-dark-gray text-sm xl:text-md'>Junior full-stack developer</p>
+                    <p className='text-dark-gray text-sm xl:text-lg'>Junior full-stack developer</p>
                     <br/>
                 </div>
                 <PictureWrapper>
                     <div className='w-5/6 sm:w-5/12 h-auto xl:w-5/6 xl:h-auto z-20 rounded-full'>
-                        <motion.div animate={{ rotate: [0, 360] }} transition={{ repeat: Infinity, duration: 100, ease: "linear" }}>
+                        <motion.div animate={{ rotate: [0, 360] }} transition={{ repeat: Infinity, duration: 300, ease: "linear" }}>
                                     <img className='w-full h-auto' src={polynesian} alt="polynesian design" />
                         </motion.div>
                     </div>
